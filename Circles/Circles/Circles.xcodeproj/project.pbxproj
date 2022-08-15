@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18990CBAD1EA6197BBA9B336 /* Pods_Circles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 720D8A6A1EA70A4A97B822FC /* Pods_Circles.framework */; };
 		BAAADD3028A9C8AE006C3BBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAADD2F28A9C8AE006C3BBF /* AppDelegate.swift */; };
 		BAAADD3228A9C8AE006C3BBF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAADD3128A9C8AE006C3BBF /* SceneDelegate.swift */; };
 		BAAADD3428A9C8AE006C3BBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAADD3328A9C8AE006C3BBF /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		720D8A6A1EA70A4A97B822FC /* Pods_Circles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Circles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		987CACE53B005502ECF6C1DC /* Pods-Circles.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Circles.release.xcconfig"; path = "Target Support Files/Pods-Circles/Pods-Circles.release.xcconfig"; sourceTree = "<group>"; };
 		BAAADD2C28A9C8AE006C3BBF /* Circles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Circles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAAADD2F28A9C8AE006C3BBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAAADD3128A9C8AE006C3BBF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		BAAADD3828A9C8B1006C3BBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAAADD3B28A9C8B1006C3BBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAAADD3D28A9C8B1006C3BBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBA5B812EEBEAC868BA40493 /* Pods-Circles.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Circles.debug.xcconfig"; path = "Target Support Files/Pods-Circles/Pods-Circles.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18990CBAD1EA6197BBA9B336 /* Pods_Circles.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		163804FEEEE0584475479F7E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DBA5B812EEBEAC868BA40493 /* Pods-Circles.debug.xcconfig */,
+				987CACE53B005502ECF6C1DC /* Pods-Circles.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		27E5B0410112D93F5A7016C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				720D8A6A1EA70A4A97B822FC /* Pods_Circles.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BAAADD2328A9C8AE006C3BBF = {
 			isa = PBXGroup;
 			children = (
 				BAAADD2E28A9C8AE006C3BBF /* Circles */,
 				BAAADD2D28A9C8AE006C3BBF /* Products */,
+				163804FEEEE0584475479F7E /* Pods */,
+				27E5B0410112D93F5A7016C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BAAADD4028A9C8B1006C3BBF /* Build configuration list for PBXNativeTarget "Circles" */;
 			buildPhases = (
+				A980E61CA0EA52755748BDD1 /* [CP] Check Pods Manifest.lock */,
 				BAAADD2828A9C8AE006C3BBF /* Sources */,
 				BAAADD2928A9C8AE006C3BBF /* Frameworks */,
 				BAAADD2A28A9C8AE006C3BBF /* Resources */,
+				C80BFE7E2744E2DB108A3B03 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A980E61CA0EA52755748BDD1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Circles-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C80BFE7E2744E2DB108A3B03 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Circles/Pods-Circles-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Circles/Pods-Circles-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Circles/Pods-Circles-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BAAADD2828A9C8AE006C3BBF /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		BAAADD4128A9C8B1006C3BBF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBA5B812EEBEAC868BA40493 /* Pods-Circles.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +382,7 @@
 		};
 		BAAADD4228A9C8B1006C3BBF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 987CACE53B005502ECF6C1DC /* Pods-Circles.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
